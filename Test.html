@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<link rel="stylesheet" href="ATGstyle.CSS">
+
+</head>
+<body id="All">
+
+<header><B>DLA Energy ATG/Tank Data Entry Template</B> <header>
+
+<br><br>
+
+<b>Used for sections 1.3 - 1.3.1.1 <a href="\\orgeast\DISPO_SVS\cic$\GOTs - H Drive\Agent Interface Desktop (AID)\CRM Tools\DLA Standard Operating Procedures (SOPs)\DESC\Energy Desk Guide 20220525.pdf" 
+	target="_blank">DLA Energy Desk Guide</a> <br>
+	</b> <br><br>
+
+<header>CASE NUMBER<header>
+<form action=http://www.html.am/html-codes/textboxes/submitted.cfm><textarea 
+	contenteditable="true" name=myTextBox></textarea></form><br>
+
+<header>TANK NUMBER:</header>
+<form action=http://www.html.am/html-codes/textboxes/submitted.cfm><textarea placeholder="Tank Identification Number." 
+	contenteditable="true" name=myTextBox></textarea></form><br>
+
+<header>PRODUCT GRADE:<header> 
+<form action=http://www.html.am/html-codes/textboxes/submitted.cfm><textarea placeholder="Three-digit product grade for what is in the tank." 
+	contenteditable="true" name=myTextBox></textarea></form><br>
+
+<header>RECORDED TEST DIFFERENCE:<header> 
+<form action=http://www.html.am/html-codes/textboxes/submitted.cfm><textarea placeholder="How much the ATG is out of tolerence." 
+	contenteditable="true" name=myTextBox></textarea>
+		<p>NOTE:  This only needs to be populated if the answer to the "ATG Out of Tolerance"
+		field below is set to 1 (True). <br> The information for this will be provided by the
+		customer or listed in the DL2026 from under block 14</p>
+	</form><br>
+
+<header>ATG READING DATA:<header>
+<form action=http://www.html.am/html-codes/textboxes/submitted.cfm><textarea placeholder="True or False" 
+	contenteditable="true" name=myTextBox id="ATGRD"></textarea></form><br>
+		
+<header>ATG OUT OF TOLERANCE:<header> 
+<form action=http://www.html.am/html-codes/textboxes/submitted.cfm><textarea placeholder="True or False" 
+	contenteditable="true" name=myTextBox id="ATGOOT"></textarea></form><br>
+
+<header>ATG OTHER ISSUES:<header> 
+	<form action=http://www.html.am/html-codes/textboxes/submitted.cfm>
+	<textarea placeholder="Probe isn’t reading, Alarm on Tank, Replacement keypad for ATG." contenteditable="true" name=myTextBox>
+</textarea></form><br>
+
+<button onclick="myFunction()">Copy</button>
+
+<script>
+    function myFunction() {
+    
+      var copyText = document.getElementsById("ATGRD ATGOOT");
+      copyText.select();
+      navigator.clipboard.writeText(copyText.value);
+      alert("Copied the text: " + copyText.value);
+    }
+</script>
+
+
+
+
+	<br>
+	<br>
+
+<footer>ATG HTML Template <br>created by Josh Lindow CIC Research and Support <br>Version 1.2 06/03/2022<footer> </form>
+
+</body>
+</html>
